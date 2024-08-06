@@ -1,0 +1,36 @@
+gits() {
+  git status
+}
+
+gtp() {
+  git pull
+}
+
+gtco() {
+  git checkout "$1"
+}
+
+gtd() {
+  git diff
+}
+
+gtad() {
+  git add .
+}
+
+gtpo() {
+  branch=$(git symbolic-ref --short HEAD)
+  git push origin $branch
+} 
+
+gtc() {
+  git commit -m "$1"
+}
+
+gtcp() {
+  gtc $1 && gtpo
+}
+
+gtf() {
+  git fetch --all
+}
