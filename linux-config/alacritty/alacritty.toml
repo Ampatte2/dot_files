@@ -369,7 +369,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [shell]
 # args = ["--command=tmux"]
-program = "/usr/bin/bash"
+program = "/bin/zsh"
 
 [window]
 decorations = "buttonless"
